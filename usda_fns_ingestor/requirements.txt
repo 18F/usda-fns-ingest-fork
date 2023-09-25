@@ -1,5 +1,5 @@
 -i https://pypi.python.org/simple
--e git+https://github.com/18F/ReVAL.git@d33c7ede69bba383d655f1961755646038bdd90b#egg=data-ingest
+-e git+https://github.com/18F/ReVAL.git@v0.6.1#egg=data-ingest
 attrs==19.2.0
 boto3==1.9.246
 botocore==1.12.246

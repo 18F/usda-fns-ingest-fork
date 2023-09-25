@@ -5,7 +5,7 @@ from secret import generate_random_string
 
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = env.get_credential('APP_SECRET_KEY', generate_random_string(50))
+SECRET_KEY = env.get_credential('SECRET_KEY', generate_random_string(50))
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -47,4 +47,9 @@ LOGGING = {
             'level': 'INFO',
         },
     },
+}
+
+# for Docker setup
+DATABASES = {
+    'default': dj_database_url.config(default='postgres://postgres@db/postgres')
 }
