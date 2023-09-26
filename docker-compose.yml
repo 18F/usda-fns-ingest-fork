@@ -23,6 +23,7 @@ services:
       dockerfile: ./Dockerfile
     environment:
       DATABASE_URL: postgres://postgres@db/postgres
+      DJANGO_SETTINGS_MODULE: usda_fns_ingestor.settings.local
     depends_on:
       - db
     ports:
