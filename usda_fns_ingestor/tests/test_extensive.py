@@ -45,12 +45,10 @@ def get_total_errors(results):
 
 
 class ExtensiveTests(APITestCase):
-
     fixtures = ['test_data.json']
 
     @parameterized.expand(load_test_cases('csv'))
     def test_validate_csv(self, name, expected):
-        print(name + expected)
         url = reverse('data_ingest:validate')
         data = load(name)
         token = "this1s@t0k3n"
@@ -60,15 +58,10 @@ class ExtensiveTests(APITestCase):
         err_resp = get_errors_only(response.data)
         total_err = (dict(get_total_errors(err_resp)))
         exp_data = json.loads(load(expected))
-        print("exp_data")
-        print(exp_data)
-        print("actual_data")
-        print(total_err)
         self.assertDictEqual(exp_data, total_err)
 
     @parameterized.expand(load_test_cases('json'))
     def test_validate_json(self, name, expected):
-        print(name + expected)
         url = reverse('data_ingest:validate')
         data = load(name)
         token = "this1s@t0k3n"
@@ -78,8 +71,4 @@ class ExtensiveTests(APITestCase):
         err_resp = get_errors_only(response.data)
         total_err = (dict(get_total_errors(err_resp)))
         exp_data = json.loads(load(expected))
-        print("exp_data")
-        print(exp_data)
-        print("actual_data")
-        print(total_err)
         self.assertDictEqual(exp_data, total_err)
