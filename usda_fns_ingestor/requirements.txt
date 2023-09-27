@@ -1,73 +1,72 @@
 # -i https://pypi.python.org/simple
-# -e git+https://github.com/18F/ReVAL-fork.git@update#egg=data-ingest
+# -e git+https://github.com/18F/ReVAL-fork.git@django3#egg=reval
 # # just for debuging
 # parameterized
 # #
-# django==2.2.20
+# django==3.2.21
 # gunicorn
 # gevent
 # whitenoise
 # cfenv
 # django-cors-headers
-attrs==22.2.0
-boto3==1.23.10
-botocore==1.26.10
+asgiref==3.7.2
+attrs==23.1.0
+boto3==1.28.56
+botocore==1.31.56
 cached-property==1.5.2
 certifi==2023.7.22
 cfenv==0.5.3
-chardet==5.0.0
-charset-normalizer==2.0.12
-click==8.0.4
+chardet==5.2.0
+charset-normalizer==3.2.0
+click==8.1.7
 click-default-group==1.2.4
 datapackage==1.15.2
 dj-database-url==2.1.0
-Django==2.2.20
-django-cors-headers==3.10.1
+Django==3.2.21
+django-cors-headers==4.2.0
 djangorestframework==3.14.0
-docutils==0.18.1
+docutils==0.20.1
 et-xmlfile==1.1.0
 furl==2.1.3
-gevent==22.10.2
+gevent==23.9.1
 goodtables==2.5.4
 greenlet==2.0.2
 gunicorn==21.2.0
 idna==3.4
 ijson==3.2.3
-importlib-metadata==4.8.3
 isodate==0.6.1
-jmespath==0.10.0
+jmespath==1.0.1
 json-logic-qubit==0.9.1
-jsonlines==3.1.0
-jsonpointer==2.3
-jsonschema==4.0.0
+jsonlines==4.0.0
+jsonpointer==2.4
+jsonschema==4.19.1
+jsonschema-specifications==2023.7.1
 linear-tsv==1.1.0
 openpyxl==3.1.2
 orderedmultidict==1.0.1
-packaging==21.3
-parameterized==0.8.1
-psycopg2==2.8.6
-psycopg2-binary==2.8.6
-pyparsing==3.0.7
-pyrsistent==0.18.0
+packaging==23.1
+parameterized==0.9.0
+psycopg2-binary==2.9.7
 python-dateutil==2.8.2
 pytz==2023.3.post1
 PyYAML==6.0.1
-requests==2.27.1
--e git+https://github.com/18F/ReVAL-fork.git@a0e07d98e9d41239c8f58c8dbf19db6efefb9f16#egg=ReVal
-rfc3986==1.5.0
-s3transfer==0.5.2
+referencing==0.30.2
+requests==2.31.0
+-e git+https://github.com/18F/ReVAL-fork.git@6466abd7eb6bd6af89072e815e7e7ff7b4f43dcc#egg=ReVal
+rfc3986==2.0.0
+rpds-py==0.10.3
+s3transfer==0.7.0
 simpleeval==0.9.13
 six==1.16.0
-SQLAlchemy==1.4.49
+SQLAlchemy==2.0.2
 sqlparse==0.4.4
 statistics==1.0.3.5
 tableschema==1.20.2
 tabulator==1.53.5
-typing-extensions==4.1.1
+typing_extensions==4.8.0
 unicodecsv==0.14.1
 urllib3==1.26.16
-whitenoise==5.3.0
+whitenoise==6.5.0
 xlrd==2.0.1
-zipp==3.6.0
-zope.event==4.6
-zope.interface==5.5.2
+zope.event==5.0
+zope.interface==6.0
