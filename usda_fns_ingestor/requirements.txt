@@ -17,7 +17,7 @@ djangorestframework==3.10.3
 docutils==0.15.2
 et-xmlfile==1.0.1
 furl==2.1.0
-gevent==1.4.0
+gevent==23.9.1
 goodtables==2.2.1
 greenlet==0.4.15 ; platform_python_implementation == 'CPython'
 gunicorn==19.9.0
