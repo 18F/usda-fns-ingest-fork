@@ -1,14 +1,3 @@
-# -i https://pypi.python.org/simple
-# -e git+https://github.com/18F/ReVAL-fork.git@django3#egg=reval
-# # just for debuging
-# parameterized
-# #
-# django==3.2.21
-# gunicorn
-# gevent
-# whitenoise
-# cfenv
-# django-cors-headers
 asgiref==3.7.2
 attrs==23.1.0
 boto3==1.28.56
@@ -21,12 +10,14 @@ charset-normalizer==3.2.0
 click==8.1.7
 click-default-group==1.2.4
 datapackage==1.15.2
+distlib==0.3.7
 dj-database-url==2.1.0
 Django==3.2.21
 django-cors-headers==4.2.0
 djangorestframework==3.14.0
 docutils==0.20.1
 et-xmlfile==1.1.0
+filelock==3.12.4
 furl==2.1.3
 gevent==23.9.1
 goodtables==2.5.4
@@ -45,14 +36,16 @@ linear-tsv==1.1.0
 openpyxl==3.1.2
 orderedmultidict==1.0.1
 packaging==23.1
-parameterized==0.9.0
+# parameterized==0.9.0
+pipenv==2023.9.8
+platformdirs==3.11.0
 psycopg2-binary==2.9.7
 python-dateutil==2.8.2
 pytz==2023.3.post1
 PyYAML==6.0.1
 referencing==0.30.2
 requests==2.31.0
--e git+https://github.com/18F/ReVAL-fork.git@master#egg=ReVal
+-e git+https://github.com/18F/ReVAL-fork.git@a0455f27c97f5777e25430ba374b5ba267c04a53#egg=ReVal
 rfc3986==2.0.0
 rpds-py==0.10.3
 s3transfer==0.7.0
@@ -66,6 +59,7 @@ tabulator==1.53.5
 typing_extensions==4.8.0
 unicodecsv==0.14.1
 urllib3==1.26.16
+virtualenv==20.24.5
 whitenoise==6.5.0
 xlrd==2.0.1
 zope.event==5.0
