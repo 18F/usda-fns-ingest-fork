@@ -1,56 +1,72 @@
--i https://pypi.python.org/simple
--e git+https://github.com/18F/ReVAL.git@d33c7ede69bba383d655f1961755646038bdd90b#egg=data-ingest
-attrs==19.2.0
-boto3==1.9.246
-botocore==1.12.246
-cchardet==2.1.4
-certifi==2019.9.11
+# -i https://pypi.python.org/simple
+# -e git+https://github.com/18F/ReVAL-fork.git@django3#egg=reval
+# # just for debuging
+# parameterized
+# #
+# django==3.2.21
+# gunicorn
+# gevent
+# whitenoise
+# cfenv
+# django-cors-headers
+asgiref==3.7.2
+attrs==23.1.0
+boto3==1.28.56
+botocore==1.31.56
+cached-property==1.5.2
+certifi==2023.7.22
 cfenv==0.5.3
-chardet==3.0.4
-click-default-group==1.2.2
-click==7.0
-datapackage==1.9.2
-dj-database-url==0.5.0
-django-cors-headers==3.1.1
-django==1.11.25
-djangorestframework==3.10.3
-docutils==0.15.2
-et-xmlfile==1.0.1
-furl==2.1.0
-gevent==1.4.0
-goodtables==2.2.1
-greenlet==0.4.15 ; platform_python_implementation == 'CPython'
-gunicorn==19.9.0
-idna==2.8
-ijson==2.5.1
-importlib-metadata==0.23
-isodate==0.6.0
-jdcal==1.4.1
-jmespath==0.9.4
+chardet==5.2.0
+charset-normalizer==3.2.0
+click==8.1.7
+click-default-group==1.2.4
+datapackage==1.15.2
+dj-database-url==2.1.0
+Django==3.2.21
+django-cors-headers==4.2.0
+djangorestframework==3.14.0
+docutils==0.20.1
+et-xmlfile==1.1.0
+furl==2.1.3
+gevent==23.9.1
+goodtables==2.5.4
+greenlet==2.0.2
+gunicorn==21.2.0
+idna==3.4
+ijson==3.2.3
+isodate==0.6.1
+jmespath==1.0.1
 json-logic-qubit==0.9.1
-jsonlines==1.2.0
-jsonpointer==2.0
-jsonschema==3.1.1
+jsonlines==4.0.0
+jsonpointer==2.4
+jsonschema==4.19.1
+jsonschema-specifications==2023.7.1
 linear-tsv==1.1.0
-more-itertools==7.2.0
-openpyxl==3.0.0
+openpyxl==3.1.2
 orderedmultidict==1.0.1
-psycopg2-binary==2.8.3
-pyrsistent==0.15.4
-python-dateutil==2.8.0 ; python_version >= '2.7'
-pytz==2019.3
-pyyaml==5.1.2
-requests==2.22.0
-rfc3986==1.3.2
-s3transfer==0.2.1
-simpleeval==0.9.8
-six==1.12.0
-sqlalchemy==1.3.9
+packaging==23.1
+parameterized==0.9.0
+psycopg2-binary==2.9.7
+python-dateutil==2.8.2
+pytz==2023.3.post1
+PyYAML==6.0.1
+referencing==0.30.2
+requests==2.31.0
+-e git+https://github.com/18F/ReVAL-fork.git@6466abd7eb6bd6af89072e815e7e7ff7b4f43dcc#egg=ReVal
+rfc3986==2.0.0
+rpds-py==0.10.3
+s3transfer==0.7.0
+simpleeval==0.9.13
+six==1.16.0
+SQLAlchemy==2.0.2
+sqlparse==0.4.4
 statistics==1.0.3.5
-tableschema==1.8.0
-tabulator==1.26.1
+tableschema==1.20.2
+tabulator==1.53.5
+typing_extensions==4.8.0
 unicodecsv==0.14.1
-urllib3==1.25.6 ; python_version >= '3.4'
-whitenoise==4.1.4
-xlrd==1.2.0
-zipp==0.6.0
+urllib3==1.26.16
+whitenoise==6.5.0
+xlrd==2.0.1
+zope.event==5.0
+zope.interface==6.0
