@@ -93,6 +93,6 @@ class ExtensiveTests(APITestCase):
         token = "this1s@t0k3n"
         self.client.credentials(HTTP_AUTHORIZATION="Token " + token)
         response = self.client.post(
-            url, data, content_type="application/json", follow=true
+            url, data, content_type="application/json", follow="true"
         )
         self.assertEqual(response.status_code, status.HTTP_200_OK)
