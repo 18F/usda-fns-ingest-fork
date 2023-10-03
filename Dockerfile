@@ -13,7 +13,10 @@ WORKDIR /app
 
 # Install pip requirements
 COPY usda_fns_ingestor/requirements.txt /app
-RUN pip install -r requirements.txt --no-cache-dir
+# RUN pip install -r requirements.txt --no-cache-dir
+RUN pip install -r requirements.txt
+# for tests
+RUN pip install parameterized
 COPY . /app
 
 WORKDIR /app/usda_fns_ingestor/
