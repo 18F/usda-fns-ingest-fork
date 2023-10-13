@@ -1,0 +1,30 @@
+---
+name: Deploy apps to cloud.gov
+on:
+  workflow_call:
+    inputs:
+      environment:
+        required: true
+        type: string
+
+jobs:
+  push-with-creds:
+    name: Deploy to cloud.gov
+    runs-on: ubuntu-latest
+    # If you set up envirionments use this, I am hard coding for example
+    # environment: ${{ inputs.environment }}
+    # env:
+    #   space: ${{ inputs.environment }}
+    env:
+      space: dev
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Deploy to cloud.gov
+        uses: 18f/cg-deploy-action@main
+        with:
+          cf_username: ${{ secrets.CF_USERNAME }}
+          cf_password: ${{ secrets.CF_PASSWORD }}
+          cf_org: usda-fns
+          cf_space: ${{ env.space }}
+          push_arguments: -f usda_fns_ingestor/manifests/manifest_${{ env.space }}.yml

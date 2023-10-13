@@ -4,11 +4,12 @@ applications:
   stack: cflinuxfs4
   buildpack: python_buildpack
   memory: 512mb
+  path: ../
   routes:
-    - route: usda-fns-ingestor.app.cloud.gov
+    - route: usda-dvs-staging-d3.app.cloud.gov
   instances: 1
   services:
-   - usda-fns-ingestor-db
+   - usda-fns-ingestor
    - DJANGO
   env:
     DJANGO_SETTINGS_MODULE: usda_fns_ingestor.settings.cloud

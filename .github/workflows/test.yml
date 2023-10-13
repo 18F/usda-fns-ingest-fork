@@ -1,0 +1,15 @@
+---
+name: Deploy apps to cloud.gov
+on:
+  workflow_call:
+
+jobs:
+  unit-tests:
+    name: Run unit tests
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build the stack
+      run: docker-compose build
+    - name: Run unit tests
+      run: docker-compose run usdafnsingest python manage.py test

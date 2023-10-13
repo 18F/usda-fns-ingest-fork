@@ -45,7 +45,7 @@ pytz==2023.3.post1
 PyYAML==6.0.1
 referencing==0.30.2
 requests==2.31.0
--e git+https://github.com/18F/ReVAL-fork.git@e0164db271dc44adafbc92bbf8bf8fc9fe7cdec1#egg=ReVal
+-e git+https://github.com/18F/ReVAL-fork.git@v1.0.1#egg=ReVal
 rfc3986==2.0.0
 rpds-py==0.10.3
 s3transfer==0.7.0

@@ -4,8 +4,9 @@ applications:
   stack: cflinuxfs4
   buildpack: python_buildpack
   memory: 512mb
+  path: ../
   routes:
-    - route: usda-fns-dvs-staging.app.cloud.gov
+    - route: usda-dvs-dev.app.cloud.gov
   instances: 1
   services:
    - usda-fns-ingestor-db
