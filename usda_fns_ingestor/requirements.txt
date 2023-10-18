@@ -58,7 +58,7 @@ tableschema==1.20.2
 tabulator==1.53.5
 typing_extensions==4.8.0
 unicodecsv==0.14.1
-urllib3==1.26.16
+urllib3==1.26.18
 virtualenv==20.24.5
 whitenoise==6.5.0
 xlrd==2.0.1
