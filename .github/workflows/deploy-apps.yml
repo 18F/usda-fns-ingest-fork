@@ -21,10 +21,10 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Deploy to cloud.gov
-        uses: 18f/cg-deploy-action@main
+        uses: cloud-gov/cg-cli-tools@main
         with:
           cf_username: ${{ secrets.CF_USERNAME }}
           cf_password: ${{ secrets.CF_PASSWORD }}
           cf_org: usda-fns
           cf_space: ${{ env.space }}
-          push_arguments: -f usda_fns_ingestor/manifests/manifest_${{ env.space }}.yml
+          cf_manifest: usda_fns_ingestor/manifests/manifest_${{ env.space }}.yml
