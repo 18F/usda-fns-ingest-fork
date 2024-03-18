@@ -12,7 +12,7 @@ click-default-group==1.2.4
 datapackage==1.15.2
 distlib==0.3.7
 dj-database-url==2.1.0
-Django==3.2.21
+Django==3.2.25
 django-cors-headers==4.2.0
 djangorestframework==3.14.0
 docutils==0.20.1
