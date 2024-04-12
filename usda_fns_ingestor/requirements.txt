@@ -23,7 +23,7 @@ gevent==23.9.1
 goodtables==2.5.4
 greenlet==2.0.2
 gunicorn==21.2.0
-idna==3.4
+idna==3.7
 ijson==3.2.3
 isodate==0.6.1
 jmespath==1.0.1
