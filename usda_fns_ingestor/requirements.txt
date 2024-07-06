@@ -3,7 +3,7 @@ attrs==23.1.0
 boto3==1.28.56
 botocore==1.31.56
 cached-property==1.5.2
-certifi==2023.7.22
+certifi==2024.7.4
 cfenv==0.5.3
 chardet==5.2.0
 charset-normalizer==3.2.0
